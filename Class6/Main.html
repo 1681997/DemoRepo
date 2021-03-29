@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="myText">Sima Gaikwad</h1>
+    <button onclick="onChangeColor()">Single Click</button>
+    <button ondblclick="onDubbleClick()">OnDouble Click</button>
+
+    <script>
+        function onChangeColor(){
+            document.getElementById('myText').style.color = "yellow";
+        }
+
+        function onDubbleClick(){
+            document.getElementById('myText').style.color = 'green';
+        }
+    </script><br><br>
+
+****************************************************************************************
+<h1>Write a Tweet</h1>
+<textarea id="text"></textarea>
+<p id="comment"></p>
+<button onclick="onButtonClick()">Click Me</button>
+
+<h1 id="myHeading"></h1>
+
+<script>
+    function onButtonClick(){
+        var txt =  document.getElementById('text').value;
+         document.getElementById('myHeading').innerHTML = txt;
+    }
+</script> <br>
+
+*****************************************************************************************
+<h1>Write a Tweet</h1>
+<textarea id="text" onkeypress="onChange()"></textarea>
+<p id="comment"></p>
+
+<h1 id="myHeading"></h1>
+
+<script>
+    function onChange(){
+        var txt =  document.getElementById('text').value;
+         document.getElementById('myHeading').innerHTML = txt.length;
+    }
+</script>
+<br>
+******************************************************************************************    
+
+</body>
+</html>
